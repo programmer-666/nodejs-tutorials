@@ -1,0 +1,19 @@
+{
+  "name": "npm_n1",
+  "version": "0.0.1",
+  "description": "npm tutorial",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "programmer-666"
+  ],
+  "author": "MIT",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.1.4",
+    "sillyname": "^0.1.0"
+  }
+}
