@@ -1,16 +1,22 @@
 import express from "express";
 import fs from "fs";
 
-
 const app = express();
+const port = 80;
 
-app.listen(80, () => {
-    console.log("Server Active");
+
+app.listen(port, () => {
+  console.log(`Server Active ${port}`);
 });
 
 app.get("/", (req, res) => {
-    fs.readFile("header.html", "utf-8", (err, data) => {
-        res.send(data);
-        console.log(req.params);
-    });
+  fs.readFile("header.html", "utf-8", (err, data) => {
+    res.sendStatus(200);
+    res.send(data);
+  });
+});
+
+app.get("/info", (req, res) => {
+    res.sendStatus(200);
+    res.send("informational data");
 });
