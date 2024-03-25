@@ -11,7 +11,6 @@ app.listen(port, () => {
 
 app.get("/", (req, res) => {
   fs.readFile("header.html", "utf-8", (err, data) => {
-    res.sendStatus(200);
     res.send(data);
   });
 });
