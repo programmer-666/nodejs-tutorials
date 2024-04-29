@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Test EJS</title>
+    <%- headerTags %>
+</head>
+<body>
+    <% const arr = ["cake", "is", "a", "lie", "🍰"]; %>
+
+    <div class="container">
+        <div class="row">
+            <% arr.forEach(element => { %>
+               <div class="col-lg-12 bg-warning">
+                    <p><%= element %></p>
+               </div>
+            <% }); %>
+        </div>
+    </div>
+
+</body>
+</html>
